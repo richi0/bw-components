@@ -2,7 +2,7 @@ import * as React from 'react'
 import { ChakraProvider, extendTheme, CSSReset } from '@chakra-ui/react'
 import './App.css'
 import { HashRouter as Router, Switch, Route } from 'react-router-dom'
-import CustomButton from './components/customButton'
+import Button from './components/Button'
 
 const theme = extendTheme({
   colors: {
@@ -37,7 +37,7 @@ export const App = () => (
     <Router>
       <Switch>
         <Route path="/">
-          <CustomButton label="aaa" onClick={() => null} />
+          <Button label="aaa" onClick={() => null} />
         </Route>
       </Switch>
     </Router>

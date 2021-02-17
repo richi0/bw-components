@@ -4,6 +4,6 @@ import { App } from "./App"
 
 test("renders learn react link", () => {
   const {container} = render(<App />)
-  const div = container.querySelector('b')
+  const div = container.querySelector('p')
   expect(div).toBeInTheDocument()
 })
